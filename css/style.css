@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  /* Colours */
+  --background: #d8e7fb;
+  --font-main: #0c1e56;
+  --font-secondary: #385395;
+  --accent: #fff3f8;
+  --accent-2: #ffc8e3;
+
+  /* Spacing */
+
+  --space-24: 1.5rem;
+  --space-40: 2.5rem;
+}
+
+* {
+  font-size: 18px;
+}
+
+body {
+  background-color: var(--background);
+}
+
+/* Text styling */
+p,
+a {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  color: var(--font-main);
+}
+
+h1 {
+  font-family: "Afacad", sans-serif;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 106px;
+}
+
+h2 {
+  font-family: "Afacad", sans-serif;
+  font-size: 64px;
+  font-weight: 700;
+}
+
+/* Header */
+header {
+  padding: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Content */
+main {
+  padding: 40px 80px;
+}
+
+.hero-content {
+  background-image: url("../assets/heroart.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  gap: 20px;
+  height: 70vh;
+  padding: 80px 40px;
+  border-radius: 20px;
+  margin-bottom: 80px;
+}
+
+.hero-content-text {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color: #ffffff;
+}
+
+.hero-content-text p {
+  color: #ffffff;
+}
+
+.opportunity {
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
+  gap: 12px;
+  background-color: #ffffff;
+  border-radius: 30px;
+  padding: 16px 12px;
+  color: var(--font-main);
+}
+
+.opportunity p {
+  color: var(--font-main);
+}
