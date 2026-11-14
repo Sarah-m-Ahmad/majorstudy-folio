@@ -19,6 +19,25 @@
   font-size: 1.125rem;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  /* Includes elements padding and borders in the width and height */
+}
+
+/* motion reduction */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
 body {
   background-color: var(--background);
 }
@@ -38,21 +57,21 @@ b {
 
 h1 {
   font-family: "Afacad", sans-serif;
-  font-size: clamp(4rem, 5rem, 6rem);
+  font-size: 5rem;
   font-weight: 700;
   color: var(--font-main);
 }
 
 h2 {
   font-family: "Afacad", sans-serif;
-  font-size: clamp(3rem, 3.5rem, 4rem);
+  font-size: 4rem;
   font-weight: 700;
   color: var(--font-main);
 }
 
 h3 {
   font-family: "Afacad", sans-serif;
-  font-size: clamp(2.25rem, 2.6rem, 3rem);
+  font-size: clamp(1.75rem, 2em, 3rem);
   font-weight: 700;
   color: var(--font-main);
 }
@@ -124,10 +143,11 @@ main {
 .projects-heading {
   display: flex;
   flex-direction: row;
-  width: fit-content;
-  justify-content: space-between;
+  justify-content: center;
   gap: 32px;
   margin: 0 auto;
+  padding-top: 60px;
+  border-top: 3px solid var(--font-main);
 }
 
 .star-group {
@@ -154,8 +174,8 @@ main {
 }
 
 .text-container {
+  flex: 1;
   display: flex;
-  width: 50%;
   flex-direction: column;
 
   gap: 24px;
@@ -204,7 +224,9 @@ main {
 }
 
 #pp {
-  width: 40%;
+  flex: 1;
+  width: stretch;
+  max-width: 400px;
 }
 
 .container {
@@ -215,6 +237,7 @@ main {
 
 .container img {
   width: 20%;
+  height: fit-content;
 }
 
 .sub-container {
@@ -273,4 +296,148 @@ footer p {
   padding-top: 24px;
   padding-bottom: 40px;
   border-top: 1px solid var(--font-main);
+}
+
+/* Javascript stuff */
+
+.fade-element {
+  transform: translateY(20px);
+  opacity: 0;
+  transition: 1s ease;
+}
+
+.element-visible {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* Focus states */
+
+.logo:focus-visible,
+.button:focus-visible,
+.link:focus-visible,
+.footer-element a:focus-visible {
+  outline: 2px solid var(--font-secondary);
+  outline-offset: 4px;
+  border-radius: 4px;
+}
+
+/* Responsive design */
+
+@media screen and (max-width: 770px) {
+  main,
+  header {
+    padding: 20px 24px;
+  }
+
+  h1 {
+    font-size: 4.5rem;
+  }
+
+  h2 {
+    font-size: 3rem;
+  }
+
+  .hero-content {
+    background-size: auto 100%;
+    padding: 40px 40px;
+    margin-bottom: 60px;
+  }
+  .hero-content-text {
+    width: 100%;
+  }
+
+  .small {
+    width: 20px;
+  }
+  .large {
+    width: 40px;
+  }
+
+  .project-container {
+    margin-top: 40px;
+    flex-direction: column-reverse;
+    justify-content: left;
+    gap: 40px;
+    padding: 40px 20px;
+  }
+
+  #root {
+    flex-direction: column;
+  }
+  .text-container {
+    width: 100%;
+    gap: 16px;
+  }
+
+  #pp {
+  }
+
+  .container {
+    flex-direction: column;
+    justify-content: first baseline;
+    gap: 24px;
+  }
+
+  .sub-container,
+  .about-container,
+  .mockup {
+    width: 100%;
+  }
+
+  .container img {
+    width: 50%;
+  }
+
+  #about {
+    flex-direction: column-reverse;
+    align-items: end;
+  }
+
+  footer {
+    margin: 0 24px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  main,
+  header {
+    padding: 12px 16px;
+  }
+
+  h1 {
+    font-size: 4rem;
+  }
+
+  .hero-content {
+    padding: 40px 20px;
+  }
+  .projects-heading {
+    gap: 16px;
+  }
+
+  #pp {
+    padding: 0 5vh;
+  }
+  .container img {
+    width: 100%;
+  }
+  footer {
+    margin: 0 16px;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .small {
+    width: 12px;
+  }
+  .large {
+    width: 24px;
+  }
+
+  .button-container {
+    flex-direction: column;
+    gap: 20px;
+    align-items: first baseline;
+  }
 }

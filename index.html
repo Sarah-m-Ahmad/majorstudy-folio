@@ -15,15 +15,15 @@
       </a>
     </header>
     <main class="home">
-      <div class="hero-content">
+      <div class="hero-content fade-element">
         <div class="hero-content-text">
-          <h2>Sarah Ahmad</h2>
-          <p>
+          <h2 class="fade-element">Sarah Ahmad</h2>
+          <p class="fade-element">
             I’m Sarah, an interaction designer who creates practical UX
             solutions to curate experiences that are more fun and easy to use. I
             love using my skills to help make design accessible for all.
           </p>
-          <div class="opportunity">
+          <div class="opportunity fade-element">
             <svg width="20" height="20">
               <circle r="10" cx="10" cy="10" fill="#42D2C9" />
             </svg>
@@ -32,18 +32,18 @@
         </div>
       </div>
       <div class="projects">
-        <div class="projects-heading">
+        <div class="projects-heading fade-element">
           <div class="star-group">
-            <img src="assets/icons/Star 2.svg" width="28px" />
-            <img src="assets/icons/Star 1.svg" width="64px" />
+            <img class="small" src="assets/icons/Star 2.svg" width="28px" />
+            <img class="large" src="assets/icons/Star 1.svg" width="64px" />
           </div>
           <h1>Projects</h1>
           <div class="star-group">
-            <img src="assets/icons/Star 1.svg" width="64px" />
-            <img src="assets/icons/Star 2.svg" width="28px" />
+            <img class="large" src="assets/icons/Star 1.svg" width="64px" />
+            <img class="small" src="assets/icons/Star 2.svg" width="28px" />
           </div>
         </div>
-        <div class="project-container">
+        <div class="project-container fade-element">
           <div class="text-container">
             <p class="subheading">SERVICES AUSTRALIA</p>
             <h2>Page Poll Redesign</h2>
@@ -73,7 +73,12 @@
             <img id="pp" src="assets/mockupsPP.png" alt="project-preview" />
           </div>
         </div>
-        <div class="project-container">
+        <div class="project-container fade-element" id="root">
+          <img
+            class="mockup"
+            src="assets/mockiproot.png"
+            alt="project-preview"
+          />
           <div class="text-container">
             <p class="subheading">UNIVERSITY MAJOR STUDY</p>
             <h2>Root</h2>
@@ -98,13 +103,8 @@
               </a>
             </div>
           </div>
-          <img
-            class="mockup"
-            src="assets/mockiproot.png"
-            alt="project-preview"
-          />
         </div>
-        <div class="project-container">
+        <div class="project-container fade-element">
           <div class="text-container">
             <p class="subheading">SERVICES AUSTRALIA</p>
             <h2>Alerts Redesign</h2>
@@ -131,7 +131,7 @@
         </div>
       </div>
       <div class="container">
-        <div class="sub-container">
+        <div class="sub-container fade-element">
           <h3>Experience</h3>
           <div class="sub-container-2">
             <div>
@@ -143,7 +143,7 @@
             </div>
           </div>
         </div>
-        <div class="sub-container">
+        <div class="sub-container fade-element">
           <h3>Awards</h3>
           <div class="sub-container-2">
             <div>
@@ -169,7 +169,7 @@
           </div>
         </div>
       </div>
-      <div class="container" id="about">
+      <div class="container fade-element" id="about">
         <div class="about-container">
           <h3>About me</h3>
           <p>
@@ -186,7 +186,7 @@
         />
       </div>
     </main>
-    <footer>
+    <footer class="fade-element">
       <h3>Reach out</h3>
       <div class="footer-element">
         <img src="assets/icons/mail.svg" width="24px" />
