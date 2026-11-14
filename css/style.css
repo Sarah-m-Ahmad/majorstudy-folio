@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 :root {
   /* Colours */
   --background: #d8e7fb;
@@ -45,7 +44,7 @@ body {
 /* Text styling */
 p,
 a {
-  font-family: "Roboto", sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 400;
   line-height: 1.75rem;
   color: var(--font-main);
@@ -320,7 +319,7 @@ main {
   flex-direction: column;
   gap: 16px;
   margin-top: 40px;
-  padding: 40px 0;
+  padding: 40px 0 0 0;
   border-top: 3px solid var(--font-main);
 }
 
@@ -341,13 +340,38 @@ main {
 
 .quote-block {
   margin-top: 40px;
-  padding: 40px 0;
+  padding-top: 40px;
   border-top: 3px solid var(--font-main);
 }
 
 .quote-block p {
   font-size: 24px;
   font-weight: 300;
+}
+
+#results {
+  padding-bottom: 40px;
+}
+
+table {
+  width: 100%;
+  border-radius: 4px;
+  border: 1px solid var(--font-secondary);
+}
+
+td,
+th {
+  border-top: 1px solid var(--font-secondary);
+  border-bottom: 1px solid var(--font-secondary);
+  text-align: left;
+  padding: 12px;
+  font-family: "Inter", sans-serif;
+  color: var(--font-main);
+}
+
+th {
+  font-weight: 700;
+  background-color: var(--accent);
 }
 
 /* Other projects links */
@@ -504,6 +528,13 @@ footer p {
     flex-direction: column;
     justify-content: first baseline;
     gap: 24px;
+  }
+
+  .content-container {
+    gap: 12px;
+    margin-top: 20px;
+    padding: 20px 0 0 0;
+    border-top: 3px solid var(--font-main);
   }
 
   .sub-container,
