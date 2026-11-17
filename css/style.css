@@ -61,7 +61,8 @@ i {
 h1,
 h2,
 h3,
-h4 {
+h4,
+h5 {
   font-family: "Afacad", sans-serif;
   font-weight: 700;
   color: var(--font-main);
@@ -81,6 +82,10 @@ h3 {
 
 h4 {
   font-size: 1.5rem;
+}
+
+h5 {
+  font-size: 1.25rem;
 }
 
 /* Header */
@@ -273,6 +278,10 @@ main {
   color: var(--accent-2);
   border: solid 1px var(--accent-2);
   transition: all 0.3s ease-out;
+}
+
+.project-link {
+  padding: 20px 0;
 }
 
 .link {

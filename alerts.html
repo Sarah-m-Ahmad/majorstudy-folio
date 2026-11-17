@@ -88,8 +88,17 @@
             <p><i>Stacked alerts</i></p>
           </div>
         </div>
+        <div class="project-link">
+          <a
+            class="link"
+            href="https://www.servicesaustralia.gov.au/natural-disaster"
+            ><p>Live product</p>
+            <img src="assets/icons/open-in-new.svg" alt="" width="24" />
+          </a>
+        </div>
         <div class="content-container" id="problema">
           <!-- The problem -->
+
           <h3>The problem</h3>
           <p>
             Alerts play a critical role in surfacing time-sensitive or
@@ -164,29 +173,568 @@
           <!-- ideate -->
           <h3 id="ideate">Ideate</h3>
           <h4>Design</h4>
+          <p>
+            We revisited the design with the primary goal to retain as much
+            consistency as possible across different alert styles. The designs
+            also had to accommodate different screen sizes.
+          </p>
+          <p>
+            Another aspect I considered was how the design would look like with
+            the maximum number of alerts. Despite the need to preserve screen
+            real estate, alerts must remain visible when the user first loads
+            the large and then provide the option to hide or dismiss them.
+          </p>
+          <div class="sub-container-3 caption">
+            <img
+              src="assets/alerts/ideate-design.png"
+              alt="screenshot of exploring an alert"
+            />
+            <p><i>Alert design exploration</i></p>
+          </div>
           <h4>Colour</h4>
+          <p>
+            As part of ensuring the alerts became more prominent on the page to
+            combat banner blindness, we experimented with potential colours and
+            how they would translate from light mode to dark mode.
+          </p>
+          <div class="sub-container-3 caption">
+            <img
+              src="assets/alerts/ideate-colour.png"
+              alt="screenshot of potential alert color palettes"
+            />
+            <p><i>Alert colour palettes</i></p>
+          </div>
           <h4>Icons</h4>
+          <p>
+            This was something we experimented with to support better
+            comprehension and urgency was appropriately communicated
+          </p>
+          <div class="sub-container-3 caption">
+            <img
+              src="assets/alerts/ideate-icon.png"
+              alt="screenshot of different icons"
+            />
+            <p><i>Alert icons</i></p>
+          </div>
         </div>
         <div class="content-container">
           <!-- prototype -->
           <h3 id="protoa">Prototyping</h3>
+          <p>
+            After proposing several new concepts and ideas, the designs went
+            through multiple approval rounds and testing plans were drafted.
+          </p>
+
           <div class="icon-heading">
             <img src="assets/icons/insights.svg" alt="" />
             <h4>Overall insights</h4>
           </div>
+          <ul>
+            <li>
+              &bull;
+              <p>
+                No longer accommodate banner designs (which was above the header
+                and filled the entire screen) due to lack of use.
+              </p>
+            </li>
+            <li>
+              &bull;
+              <p>
+                Limit number of alerts displayed at once. Prototyping this
+                highlighted that it would cause overwhelm rather than incentive
+                to action them .
+              </p>
+            </li>
+            <li>
+              &bull;
+              <p>
+                Split testing into 3 phases: design, colours, and icons. This is
+                to ensure preference data is not distorted by other design
+                elements.
+              </p>
+            </li>
+          </ul>
           <div class="icon-heading">
             <img src="assets/icons/Checkbox.svg" alt="" />
             <h4>Concepts for testing</h4>
           </div>
+          <h5>Colours</h5>
+          <p><b>Yellow vs orange</b></p>
+          <div class="image-container">
+            <img
+              src="assets/alerts/yellow.png"
+              alt="yellow color alert in desktop, mobile, light and dark mode"
+            />
+            <img
+              src="assets/alerts/orange.png"
+              alt="orange color alert in desktop, mobile, light and dark mode"
+            />
+          </div>
+          <p><b>Blue vs purple</b></p>
+          <div class="image-container">
+            <img
+              src="assets/alerts/blue.png"
+              alt="blue color alert in desktop, mobile, light and dark mode"
+            />
+            <img
+              src="assets/alerts/purple.png"
+              alt="purple color alert in desktop, mobile, light and dark mode"
+            />
+          </div>
+          <h5>Icons</h5>
+          <img
+            src="assets/alerts/iconstest.png"
+            alt="screenshot of 5 icons: informational, warning, critical error, emergency, caution"
+          />
+          <h5>Design</h5>
+          <p><b>Baseline</b></p>
+          <div class="image-container">
+            <div class="sub-container-3 caption">
+              <img
+                src="assets/alerts/baseline-sign-ing.png"
+                alt="baseline design for alerts on sign-in"
+              />
+              <p><i>Sign-in</i></p>
+            </div>
+            <div class="sub-container-3 caption">
+              <img
+                src="assets/alerts/baseline-in-page.png"
+                alt="baseline design for alerts in the page"
+              />
+              <p><i>In page</i></p>
+            </div>
+            <div class="sub-container-3 caption">
+              <img
+                src="assets/alerts/baseline-stacked.png"
+                alt="baseline design for alerts when stacked"
+              />
+              <p><i>Stacked alerts</i></p>
+            </div>
+          </div>
+          <p><b>MyGov baseline</b></p>
+          <div class="image-container">
+            <div class="sub-container-3 caption">
+              <img
+                src="assets/alerts/test-mygov-banner.png"
+                alt="mygov banner alert"
+              />
+              <p><i>Banner</i></p>
+            </div>
+            <div class="sub-container-3 caption">
+              <img
+                src="assets/alerts/test-mygov-in-page.png"
+                alt="mygov in-page alert"
+              />
+              <p><i>In-page</i></p>
+            </div>
+          </div>
+
+          <p><b>New concept</b></p>
+          <div class="image-container">
+            <div class="sub-container-3 caption">
+              <img
+                src="assets/alerts/test-c1-sign-in.png"
+                alt="new concept alert sign-in"
+              />
+              <p><i>Sign-in</i></p>
+            </div>
+            <div class="sub-container-3 caption">
+              <img
+                src="assets/alerts/test-c1-in-page.png"
+                alt="new concept alert in-page"
+              />
+              <p><i>In-page</i></p>
+            </div>
+            <div class="sub-container-3 caption">
+              <img
+                src="assets/alerts/test-c1-stacked.png"
+                alt="new concept alert stacked"
+              />
+              <p><i>Stacked</i></p>
+            </div>
+          </div>
         </div>
+
+        <!-- PROGRESS POINT TESTING -->
         <div class="content-container">
           <!-- Testing -->
           <h3 id="testa">Testing</h3>
+          <h4>Part 1:Colours</h4>
+          <p><b>Purpose</b></p>
+          <p>
+            To identify colours that reliably draw attention to genuinely
+            important information without causing unnecessary alarm or alert
+            fatigue, and assess whether one standard can work across themes,
+            devices, and user preferences.
+          </p>
+          <table>
+            <tr>
+              <th>Detail</th>
+              <th>Description</th>
+            </tr>
+            <tr>
+              <td>Method</td>
+              <td>Unmoderated online testing</td>
+            </tr>
+            <tr>
+              <td>Participants</td>
+              <td>50</td>
+            </tr>
+            <tr>
+              <td>Format</td>
+              <td>Preference selection and rationale</td>
+            </tr>
+            <tr>
+              <td>Prototypes</td>
+              <td>
+                Blue vs purple, yellow vs orange, and baseline dark mode vs
+                proposed concept
+              </td>
+            </tr>
+          </table>
+          <div class="icon-heading">
+            <img src="assets/icons/findings.svg" alt="" width="32" />
+            <h5>Findings</h5>
+          </div>
+          <p><b>Colour preference</b></p>
+          <ul>
+            <li>
+              &bull;
+              <p>
+                Yellow preferred over orange, perceived as more urgent and drew
+                more attention.
+              </p>
+            </li>
+            <li>
+              &bull;
+              <p>
+                Purple preferred over blue, perceived as more urgent and drew
+                more attention.
+              </p>
+            </li>
+          </ul>
+          <p><b>Swatch preference</b></p>
+          <ul>
+            <li>
+              &bull;
+              <p>
+                Users preferred swatches that were bright and visually
+                appealing.
+              </p>
+            </li>
+            <li>
+              &bull;
+              <p>
+                Red-Yellow-Blue (RYB) and Red-Yellow-Purple (RYP) were top-rated
+                colour schemes.
+              </p>
+            </li>
+          </ul>
+          <p><b>Dark mode preference</b></p>
+          <ul>
+            <li>
+              &bull;
+              <p>
+                Users consistently rated baseline dark mode colours as less
+                urgent because they appeared "too subtle" and blended into the
+                dark mode background.
+              </p>
+            </li>
+            <li>
+              &bull;
+              <p>
+                Users rated the new enhanced dark mode colours significantly
+                higher because they "actually pop against the dark background"
+                and "look intentional rather than washed out. This highlights a
+                preference for higher contrast colours
+              </p>
+            </li>
+          </ul>
+
+          <h4>Part 2: Icons</h4>
+          <p><b>Purpose</b></p>
+          <p>
+            To test recognition and understanding of five system alert icons,
+            and to create a consistent visual language for system alerts on the
+            Services Australia website.
+          </p>
+          <table>
+            <tr>
+              <th>Detail</th>
+              <th>Description</th>
+            </tr>
+            <tr>
+              <td>Method</td>
+              <td>Unmoderated online testing</td>
+            </tr>
+            <tr>
+              <td>Participants</td>
+              <td>25</td>
+            </tr>
+            <tr>
+              <td>Format</td>
+              <td>Icon recognition survey and preference testing</td>
+            </tr>
+            <tr>
+              <td>Prototypes</td>
+              <td>Icon images</td>
+            </tr>
+          </table>
+          <div class="icon-heading">
+            <img src="assets/icons/findings.svg" alt="" width="32" />
+            <h5>Findings</h5>
+          </div>
+          <table>
+            <thead>
+              <tr>
+                <th>Icon</th>
+                <th>Effectivness ratings</th>
+                <th>User recognition</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <img src="assets/icons/information.svg" alt="" />
+                  <p>Information Icon</p>
+                </td>
+                <td>4.84/5</td>
+                <td>
+                  <b>Excellent recognition:</b> Users clearly understand this is
+                  an <b>information icon</b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <img src="assets/icons/warning.svg" alt="" />
+                  <p>Warning Icon</p>
+                </td>
+                <td>4.68/5</td>
+                <td>
+                  <b>Strong performance:</b> Good recognition with some
+                  variation in interpretation
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <img src="assets/icons/criticalerror.svg" alt="" />
+                  <p>Critical Error Icon</p>
+                </td>
+                <td>3.08/5</td>
+                <td>
+                  <b>Moderate recognition:</b> Mixed interpretations suggest
+                  this icon needs refinement
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <img src="assets/icons/emergency.svg" alt="" />
+                  <p>Emergency Icon</p>
+                </td>
+                <td>2.20/5</td>
+                <td>
+                  <b>Poor recognition:</b> Users struggle to identify this as an
+                  emergency icon
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <img src="assets/icons/caution.svg" alt="" />
+                  <p>Caution Icon</p>
+                </td>
+                <td>2.92/5</td>
+                <td>
+                  <b>Confusing to users:</b> Many interpret this as
+                  Informational rather than 'Caution'
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <h4>Part 3: Design preference</h4>
+          <p><b>Purpose</b></p>
+          <p>
+            To determine whether the redesigned patterns improves visibility,
+            readability, and trust.
+          </p>
+          <table>
+            <tr>
+              <th>Detail</th>
+              <th>Description</th>
+            </tr>
+            <tr>
+              <td>Method</td>
+              <td>Unmoderated online testing</td>
+            </tr>
+            <tr>
+              <td>Participants</td>
+              <td>120 (15 per test)</td>
+            </tr>
+            <tr>
+              <td>Format</td>
+              <td>Desktop and mobile</td>
+            </tr>
+            <tr>
+              <td>Prototypes</td>
+              <td>Figma prototype</td>
+            </tr>
+          </table>
+          <div class="icon-heading">
+            <img src="assets/icons/findings.svg" alt="" width="32" />
+            <h5>Findings</h5>
+          </div>
+          <p><b>Alert banner design preference: myGov Baseline</b></p>
+          <ul>
+            <li>
+              &bull;
+              <p>
+                Most consistent with the messaging across mobile and desktop.
+              </p>
+            </li>
+            <li>
+              &bull;
+              <p>Clear comprehension from multiple participants.</p>
+            </li>
+            <li>
+              &bull;
+              <p>Understood call-to-action and deadline concept.</p>
+            </li>
+          </ul>
+          <p><b>Sign-in pattern preference </b></p>
+          <p>
+            Most participants preferred the new concept over the baseline, with
+            desktop users expressing a greater preference for it. Participants
+            who chose the baseline design appreciated its straightforward
+            single-colour scheme and bold appearance
+          </p>
+          <p><b>Multiple alert patterns and show/hide preference</b></p>
+          <ul>
+            <li>
+              &bull;
+              <p>
+                The new alert design concepts were strongly preferred by
+                participants compared to the baseline designs.
+              </p>
+            </li>
+            <li>
+              &bull;
+              <p>
+                Users found the new concepts easier to navigate, especially on
+                mobile devices, where both designs performed well, but the new
+                approach outperformed all alternatives.
+              </p>
+            </li>
+            <li>
+              &bull;
+              <p>
+                The new concept was more intuitive and visually effective,
+                leading to higher satisfaction and preference among users.
+              </p>
+            </li>
+          </ul>
+          <p><b>Info vs notification icon</b></p>
+          <ul>
+            <li>
+              &bull;
+              <p>
+                Most users preferred the 'bell' notification icon over the
+                information icon. They saw the 'bell' notification icon as a
+                familiar symbol, especially from mobile apps and social media.
+                In contrast, the information icon felt too generic and wasn't
+                seen as suitable for alerts.
+              </p>
+            </li>
+            <li>
+              &bull;
+              <p>
+                Participants saw the ‘red dot’ on the bell icon as a clear cue
+                that something new needed attention.
+              </p>
+            </li>
+          </ul>
 
           <div class="icon-heading">
             <img src="assets/icons/Moveup.svg" alt="" />
             <h4>Next steps</h4>
           </div>
+          <p><b>Colours</b></p>
+          <ul>
+            <li>
+              &bull;
+              <p>Use yellow for high-priority alerts in both themes.</p>
+            </li>
+            <li>
+              &bull;
+              <p>
+                Despite purple outperforming blue in light mode, implement
+                baseline blue given its performance in dark mode for
+                consistency.
+              </p>
+            </li>
+          </ul>
+          <p><b>Icons</b></p>
+          <ul>
+            <li>
+              &bull;
+              <p>Use informational icon for information system alerts.</p>
+            </li>
+            <li>
+              &bull;
+              <p>
+                Warning icon for warnings and critical errors system alerts.
+              </p>
+            </li>
+            <li>
+              &bull;
+              <p>Critical alert icon for emergencies system alert.</p>
+            </li>
+            <li>
+              &bull;
+              <p>
+                Use the <i>outlined style</i> for low to medium severity alerts.
+              </p>
+            </li>
+            <li>
+              &bull;
+              <p>
+                Use the <i>filled style</i> for high and critical severity
+                alerts.
+              </p>
+            </li>
+          </ul>
+          <p><b>Design preference</b></p>
+          <ul>
+            <li>
+              &bull;
+              <p>
+                <b>Use myGov alert patterns:</b> The myGov designs performed
+                strongly across comprehension, discoverability, noticeability,
+                and overall user preference. Introducing these patterns will
+                give customers a more consistent and seamless experience across
+                both government platforms.
+              </p>
+              <p></p>
+            </li>
+            <li>
+              &bull;
+              <p>Use new concept for multiple alerts</p>
+            </li>
+            <li>
+              &bull;
+              <p>
+                <b>Fewer alerts:</b> User testing showed that participants
+                preferred fewer alerts at once, as too many created overload and
+                contributed to banner blindness.
+              </p>
+            </li>
+            <li>
+              &bull;
+              <p>
+                <b>Clear, descriptive titles for alerts:</b> Participants
+                preferred alerts with clear titles that could be scanned and
+                understood more quickly.
+              </p>
+            </li>
+          </ul>
         </div>
 
         <div class="content-container" id="outcomea">
@@ -196,11 +744,38 @@
             <img src="assets/icons/Analytics.svg" alt="" />
             <h4>Results</h4>
           </div>
-
+          <p>
+            The redesigned Alerts were implemented on the live Services
+            Australia website, replacing the old design.
+          </p>
+          <p>
+            The new design intends to more efficiently preserves screen real
+            estate and better captures user attention by avoiding banner
+            blindness. I do not have the metrics from the live site to support
+            this.
+          </p>
           <div class="icon-heading">
             <img src="assets/icons/Designservices.svg" alt="" />
             <h4>What I learned</h4>
           </div>
+          <p><b>Testing elements of a components separately</b></p>
+          <p>
+            When changing multiple parts of a component, it is important to test
+            them in isolation to ensure that preference results are not
+            influenced by other factors.
+          </p>
+          <p><b>Form follows function</b></p>
+          <p>
+            When designing a component, it is critical to consider its function.
+            For the alerts, the visual design had to accommodate urgency,
+            multiple notifications, different screen sizes, and varying levels
+            of severity.
+          </p>
+          <p>
+            Working on this project taught me that design constraints are shaped
+            not only by project outcomes and scope, but also by what you're
+            designing.
+          </p>
         </div>
         <div class="other-work">
           <a class="back-button" href="index.html">
