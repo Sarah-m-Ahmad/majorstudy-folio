@@ -461,6 +461,31 @@ th {
   text-align: center;
 }
 
+.persona {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 20px;
+  background-color: var(--font-main);
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.persona-tile1,
+.persona-tile2,
+.persona-tile3,
+.persona-tile4 {
+  background-color: var(--font-secondary);
+  padding: 16px;
+  border-radius: 12px;
+}
+
+.persona h5,
+.persona li,
+.persona p {
+  color: #ffffff;
+}
+
 /* Other projects links */
 
 .other-work {
@@ -685,6 +710,29 @@ footer p {
   footer {
     margin: 0 24px;
   }
+
+  .persona {
+    grid-template-columns: 1fr;
+  }
+
+  .persona-tile1,
+  .persona-tile2,
+  .persona-tile3,
+  .persona-tile4 {
+    grid-column: 1;
+    grid-row: auto;
+  }
+}
+
+.sub-tile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.sub-tile img {
+  width: 112px;
 }
 
 @media screen and (max-width: 480px) {

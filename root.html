@@ -24,6 +24,9 @@
         <a href="#titler">Root</a>
         <a href="#problemr">The problem</a>
         <a href="#processr">The design process</a>
+        <a href="#define">Define</a>
+        <a href="#researchr">Research</a>
+
         <a href="#ideater">Ideate</a>
         <a href="#protor">Prototyping</a>
         <a href="#testr">Testing</a>
@@ -111,10 +114,13 @@
               <p>Using folders and files can be space inefficient</p>
             </li>
           </ul>
-          <p>Baseline:</p>
         </div>
         <div class="quote-block">
-          <p></p>
+          <p>
+            How might we develop an alternative method to representing data that
+            is space efficient, prompts organic discovery, and makes managing
+            large data sets easier?
+          </p>
         </div>
         <div class="content-container">
           <!-- the design process -->
@@ -124,30 +130,486 @@
             alt="design process diagram showing 5 stages: define, research, ideate, prototype and test"
           />
         </div>
+        <div id="define" class="content-container">
+          <!-- define -->
+          <h3>Define</h3>
+          <div class="icon-heading">
+            <img src="assets/icons/person.svg" alt="" />
+            <h4>Empathise</h4>
+          </div>
+          <p>Who could benefit?</p>
+          <ul>
+            <li>
+              &bull;
+              <p>Students or researchers</p>
+            </li>
+            <li>
+              &bull;
+              <p>People managing lots of personal files</p>
+            </li>
+            <li>
+              &bull;
+              <p>People who don't naturally organise files</p>
+            </li>
+            <li>
+              &bull;
+              <p>Long-term projects</p>
+            </li>
+          </ul>
+          <p><b>Personas</b></p>
+          <div class="persona">
+            <div class="persona-tile1">
+              <div class="sub-tile">
+                <img src="assets/root/persona.png" alt="" />
+                <h5>Nancy Akram</h5>
+              </div>
+
+              <div class="sub-container-2">
+                <p><b>AGE</b></p>
+                <p>20</p>
+              </div>
+              <div class="sub-container-2">
+                <p><b>OCCUPATION</b></p>
+                <p>Student</p>
+              </div>
+              <div class="sub-container-2">
+                <p><b>LOCATION</b></p>
+                <p>Melbourne</p>
+              </div>
+            </div>
+            <div class="persona-tile2">
+              <h5>About</h5>
+              <p>
+                Nancy is a 2nd year pharmacy student who is having a hard time
+                organising her files, as it stands her Onedrive is chaotic. She
+                has recently spent an entire day organising things, and wants to
+                make sure it doesn't get out of hand again.
+              </p>
+            </div>
+            <div class="persona-tile3">
+              <h5>Core needs</h5>
+              <ul>
+                <li>
+                  &bull;
+                  <p>
+                    Needs to have incentive to regularly organise and declutter
+                  </p>
+                </li>
+                <li>
+                  &bull;
+                  <p>Needs to develop a system for organising files</p>
+                </li>
+              </ul>
+            </div>
+            <div class="persona-tile4">
+              <h5>Frustrations</h5>
+              <ul>
+                <li>
+                  &bull;
+                  <p>
+                    'Out of sight, out of mind' often forgets files exist making
+                    it had to re-find
+                  </p>
+                </li>
+                <li>
+                  &bull;
+                  <p>
+                    Likes aesthetics and having a cute setup, even at the
+                    expense of function
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="persona">
+            <div class="persona-tile1">
+              <div class="sub-tile">
+                <img src="assets/root/persona.png" alt="" />
+                <h5>Sam Keehan</h5>
+              </div>
+
+              <div class="sub-container-2">
+                <p><b>AGE</b></p>
+                <p>27</p>
+              </div>
+              <div class="sub-container-2">
+                <p><b>OCCUPATION</b></p>
+                <p>Store manager</p>
+              </div>
+              <div class="sub-container-2">
+                <p><b>LOCATION</b></p>
+                <p>Sydney</p>
+              </div>
+            </div>
+            <div class="persona-tile2">
+              <h5>About</h5>
+              <p>
+                Sam is a local chain store manager overseeing daily affairs and
+                such. While the administration system for the store cannot be
+                changed, Sam likes to do independent research as a hobby in his
+                free time. He can get a little absorbed in the process, so often
+                he has a hard time remembering where he put things.
+              </p>
+            </div>
+            <div class="persona-tile3">
+              <h5>Core needs</h5>
+              <ul>
+                <li>
+                  &bull;
+                  <p>
+                    Have a way to keep track of research progress and keep
+                    papers somewhere. 
+                  </p>
+                </li>
+                <li>
+                  &bull;
+                  <p>Rough system that has room for change.</p>
+                </li>
+              </ul>
+            </div>
+            <div class="persona-tile4">
+              <h5>Frustrations</h5>
+              <ul>
+                <li>
+                  &bull;
+                  <p>
+                    "They all look the same!" it's hard to tell files apart from
+                    each other. 
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div id="researchr" class="content-container">
+          <!-- research -->
+          <h3>Research</h3>
+          <p>
+            The early scope for this project initially focused on using a
+            garden-based visual metaphor to make a typically visually monotonous
+            experience more novel and intuitive. However, after looking at the
+            underlying theory, I realised the more interesting design problem
+            surrounded file management theory. On top of analysing existing
+            examples such as OneDrive, macOS Finder, and Google Drive, I
+            researched the theoretical principles and accessibility
+            considerations.
+          </p>
+          <h4>Competitor UI analysis</h4>
+          <p>Main findings:</p>
+          <ul>
+            <li>
+              &bull;
+              <p>Multiple views have different strengths.</p>
+            </li>
+            <li>
+              &bull;
+              <p>There should be multiple ways to access the same features.</p>
+            </li>
+            <li>
+              &bull;
+              <p>Use icons as visual comprehension aids.</p>
+            </li>
+            <li>
+              &bull;
+              <p>
+                Searching and sorting are a dominant feature. Users should be
+                able to narrow down their query based on whatever metadata is
+                available to them.
+              </p>
+            </li>
+          </ul>
+          <div class="icon-heading">
+            <img src="assets/icons/findings.svg" alt="" />
+            <h4>Research insights</h4>
+          </div>
+          <p>
+            Find full insights
+            <a
+              href="https://www.figma.com/design/EjnBuG2MdMztW7omtlGNsD/Major-Study?node-id=197-23302&t=Wy5HKl0IMighd9DW-1"
+              >here</a
+            >.
+          </p>
+          <table>
+            <thead>
+              <tr>
+                <th>Finding</th>
+                <th>Implication</th>
+                <th>Opportunity</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Hierarchical file systems are familiar to users.</td>
+                <td>
+                  Users may be less willing to relearn an entirely new
+                  navigation system.
+                </td>
+                <td>Preserve some degree of hierarchy within the metaphor.</td>
+              </tr>
+              <tr>
+                <td>
+                  An information scent is an estimation of how much useful
+                  information they are likely to get on a given path.
+                </td>
+                <td>
+                  A stronger information scent provides more context regarding
+                  perceived value.
+                </td>
+                <td>
+                  Include visual cues such as file type, hierarchy, icons,
+                  previews and labels to provide a stronger information scent.
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Users have a hard time maintaining file sets, especially as
+                  they get larger (meta activity in Personal Infromation
+                  Management).
+                </td>
+                <td>
+                  Failure to create a robust management system early on
+                  exacerbates the issue as more files accumulate.
+                </td>
+                <td>
+                  Propose a 'pruning' feature, prompting users to periodically
+                  organise their files.
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <div class="icon-heading">
+            <img src="assets/icons/Accessibility.svg" alt="" />
+            <h4>Accessibility accommodations</h4>
+          </div>
+          <table>
+            <thead>
+              <tr>
+                <th>Concern</th>
+                <th>Consideration</th>
+                <th>Mitigation</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Keyboard navigation integration</td>
+                <td>
+                  Failure to do so means users without a mouse or mouse mobility
+                  will have a difficult time navigating.
+                </td>
+                <td>Every important action has a keyboard equivalent.</td>
+              </tr>
+              <tr>
+                <td>Color</td>
+                <td>
+                  Given the high variety of colour, it is important to maintain
+                  sufficient contrast for legibility. It can also not be the
+                  only means of communicating information.
+                </td>
+                <td>
+                  Add an additional cue to distinguish categories such as an
+                  icon, pattern, text label, border style.
+                </td>
+              </tr>
+              <tr>
+                <td>Metaphor confusion</td>
+                <td>
+                  Replacing conventional understanding may cause confusion
+                  regarding what features represent. Enjoyment of the metaphor
+                  may not be enough to warrant the initial learning curve.
+                </td>
+                <td>
+                  Can include garden terminology in secondary interaction, but
+                  underlying core interactions should remain clear and
+                  understandable.
+                </td>
+              </tr>
+              <tr>
+                <td>Screen readers</td>
+                <td>
+                  Files should still have strong underlying semantic HTML and
+                  hierarchy rather than purely visual positioning so as to not
+                  cause confusion, especially without the visual aid to decipher
+                  information.
+                </td>
+                <td>
+                  Use semantic HTML and write as a conventional information
+                  structure. The project should remain a functional file
+                  management system when stripped of the metaphor.
+                </td>
+              </tr>
+              <tr>
+                <td>Cognitive load and visual density</td>
+                <td>
+                  Having 200 plants on the screens which may be an issue when
+                  dealing with larger data sets can create overwhelm.
+                </td>
+                <td>
+                  Limit display to show 1-2 hierarchies (will need to
+                  experiment) to control the amount of information on a screen
+                  at once. Additionally, include a minimap.
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
         <div class="content-container">
           <!-- ideate -->
           <h3 id="ideater">Ideate</h3>
+          <p>
+            This phase focused on exploring selection models. I ended up
+            selecting the treemap model and modifying it to prevent cognitive
+            overload. An additional modification was adding an 'isolation mode'
+            to show just the clicked folder.
+          </p>
+          <div class="image-container">
+            <div class="sub-container-3 caption">
+              <img
+                src="assets/root/lofi-model1.png"
+                alt="low fidelity model exploration of the treemap model"
+              />
+              <p><i>Treemap model</i></p>
+            </div>
+            <div class="sub-container-3 caption">
+              <img
+                src="assets/root/lofi-model2.png"
+                alt="low fidelity model exploration of the tagging model"
+              />
+              <p><i>Tagging model</i></p>
+            </div>
+          </div>
+          <div class="image-container">
+            <div class="sub-container-3 caption">
+              <img
+                src="assets/root/lofi-modifiedtreemap.png"
+                alt="low fidelity mockup of the modified treemap model"
+              />
+              <p><i>Modified treemap model</i></p>
+            </div>
+            <div class="sub-container-3 caption">
+              <img
+                src="assets/root/lofi-isolation.png"
+                alt="low fidelity mockup of the modified treemap model in isolation mode"
+              />
+              <p><i>Isolation mode</i></p>
+            </div>
+          </div>
+          <div class="sub-container-3 caption">
+            <img
+              src="assets/root/lofi-list-dropdown.png"
+              alt="low fidelity model exploration of a list mode"
+            />
+            <p><i>List dropdown</i></p>
+          </div>
+          <div class="icon-heading">
+            <img src="assets/icons/art-palette.svg" alt="" />
+            <h4>Design decisions</h4>
+          </div>
+          <ul>
+            <li>
+              &bull;
+              <p>
+                Include a list view for accessibility and a different view
+                option.
+              </p>
+            </li>
+            <li>
+              &bull;
+              <p>
+                Schneiderman view but preserve some hierarchy to avoid cognitive
+                overwhelm.
+              </p>
+            </li>
+            <li>
+              &bull;
+              <p>Traditional selection behaviour given familiarity.</p>
+            </li>
+          </ul>
         </div>
+
         <div class="content-container">
           <!-- prototype -->
           <h3 id="protor">Prototyping</h3>
-          <div class="icon-heading">
-            <img src="assets/icons/insights.svg" alt="" />
-            <h4>Overall insights</h4>
+          <p>
+            The high-fidelity prototype interactivity was informed by some
+            testing scenarios and representing any specific behaviour. However,
+            they have limited functionality. Additional notes have been added
+            explaining elements which could not be showcased due to the inherent
+            limitations of a prototype.
+          </p>
+          <div class="sub-container-3 caption">
+            <img
+              src="assets/root/proto-High-level.png"
+              alt="High-level / zoomed out overview of the garden view "
+            />
+            <p><i>High-level overview files</i></p>
           </div>
-          <div class="icon-heading">
-            <img src="assets/icons/Checkbox.svg" alt="" />
-            <h4>Concepts for testing</h4>
+          <div class="sub-container-3 caption">
+            <img
+              src="assets/root/proto-pruning.png"
+              alt="Garden view of pruning page, where users can look at files that may need to be organised, deleted or viewed."
+            />
+            <p><i>Pruning page</i></p>
+          </div>
+          <div class="sub-container-3 caption">
+            <img
+              src="assets/root/proto-isolation-select.png"
+              alt="isolation mode of folder selected with breadcrumb and a file selected, showcasing both behaviours"
+            />
+            <p><i>Isolation mode and selected file</i></p>
+          </div>
+          <div class="sub-container-3 caption">
+            <img
+              src="assets/root/proto-search.png"
+              alt="search-page showing 1 result with sort and filter option in garden mode"
+            />
+            <p><i>Search</i></p>
           </div>
         </div>
         <div class="content-container">
           <!-- Testing -->
           <h3 id="testr">Testing</h3>
+          <p>
+            Since the scope of the project was developing a conceptual
+            interaction model, formal usability testing of the final prototype
+            was not conducted. The design direction was informed by secondary
+            research into file management, information organisation, and user
+            behaviour. I had also received informal feedback from industry
+            professionals during the low-fidelity prototyping stage.
+          </p>
+          <p>
+            However, I did develop testing plans, which can be viewed
+            <a
+              href="https://www.figma.com/design/EjnBuG2MdMztW7omtlGNsD/Major-Study?node-id=197-23169&t=Wy5HKl0IMighd9DW-1"
+              >here</a
+            >.
+          </p>
 
           <div class="icon-heading">
             <img src="assets/icons/Moveup.svg" alt="" />
             <h4>Next steps</h4>
           </div>
+          <ul>
+            <li>
+              &bull;
+              <p>
+                Conduct usability testing against the proposed interaction
+                model.
+              </p>
+            </li>
+            <li>
+              &bull;
+              <p>Evaluate performance with larger datasets.</p>
+            </li>
+            <li>
+              &bull;
+              <p>Refine interactions based on testing.</p>
+            </li>
+            <li>
+              &bull;
+              <p>- Develop a functional demo showcasing outlined behaviour.</p>
+            </li>
+          </ul>
         </div>
 
         <div class="content-container" id="outcomer">
@@ -157,11 +619,38 @@
             <img src="assets/icons/Analytics.svg" alt="" />
             <h4>Results</h4>
           </div>
-
+          <p>
+            For this project, I developed and documented a proposed alternative
+            interaction model for file management. I created a high-fidelity
+            prototype for a garden visual metaphor. This is also accompanied by
+            a component library with notes regarding implementation and how to
+            design responsively.
+          </p>
           <div class="icon-heading">
             <img src="assets/icons/Designservices.svg" alt="" />
             <h4>What I learned</h4>
           </div>
+          <p><b>Prioritise research</b></p>
+          <p>
+            I underestimated the time it would take to conduct research for this
+            project. In future project plans, I will dedicate more time for
+            research in project timelines. A project informed by more research
+            is more robust.
+          </p>
+          <p><b>Push designs to their limits</b></p>
+          <p>
+            Designs should not only remain functional in the best-case scenario
+            but should also adapt to different content and contexts. For
+            instance, designing for large data sets or very small screen sizes
+            ensures the user experience remains as consistent as possible.
+          </p>
+          <p><b>Balance comprehension with visibility</b></p>
+          <p>
+            When designing responsively, it is important to evaluate what
+            information should be hidden and what the implication of hiding it
+            would be. Ensuring users are not punished for having a smaller
+            screen size should be a priority when designing.
+          </p>
         </div>
         <div class="other-work">
           <a class="back-button" href="index.html">
